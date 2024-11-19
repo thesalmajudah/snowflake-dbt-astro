@@ -1,2 +1,2 @@
 # snowflake-dbt-astro
-DBT &amp; Snowflake ETL Pipeline orchestrated by Airflow
+DBT &amp; Snowflake ELT Pipeline orchestrated by Airflow
