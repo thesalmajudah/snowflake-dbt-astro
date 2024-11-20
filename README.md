@@ -4,8 +4,10 @@
 
 This project demonstrates a robust data pipeline that processes and transforms raw data into analytics-ready data marts using dbt with Snowflake as the data warehouse and Apache Airflow for orchestration through Astronomer's Cosmos.
 
-<img src="images/astro.png" />
 
+<div align="center">
+  <img src="images/astro.png" />
+</div>
 
 
 ## Technologies Used
@@ -41,12 +43,12 @@ Purpose: Preserve raw data as-is for reference and auditing.
 
 ### Data Warehouse
 
-<img src="images/snowflake.jpg" />
+<img src="images/snowflake.png" />
 
 
 ## Data Pipeline 
 
-<img src="images/dag.jpg" />
+<img src="images/dag.png" />
 
 My pipeline fetches the data from APIs, loads it to Google Cloud Storage, then doing the unnecessary transformations and load it again to Google BigQuery.
 
@@ -57,7 +59,7 @@ All steps are orchestrated in Airflow.
 
 After setting up my pipline, I made a daily trigger to run it and collect new data (if exists)
 
-<img src="images/schedule.jpg" />
+<img src="images/schedule.png" />
 
 
 
