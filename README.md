@@ -1,15 +1,6 @@
 # Snowflake & dbt ELT Data Pipeline 
 
-- [Problem description](#problem-description)
-- [Data Sources](#data-sources)
-- [Data Pipeline](#data-pipeline)
-- [Dashboard](#dashboard)
-- [Technologies Used](#technologies-used)
-- [Reproducibility](#reproducibility)
-- [Evaluation Criteria ](#evaluation-criteria)
-
-
-### Project Overview
+## Project Overview
 
 This project demonstrates a robust data pipeline that processes and transforms raw data into analytics-ready data marts using dbt with Snowflake as the data warehouse and Apache Airflow for orchestration through Astronomer's Cosmos.
 
@@ -32,7 +23,7 @@ This project demonstrates a robust data pipeline that processes and transforms r
 
 TPC-H is a decision support benchmark. It consists of a suite of business-oriented ad hoc queries and concurrent data modifications. The queries and the data populating the database have been chosen to have broad industry-wide relevance. This benchmark illustrates decision support systems that examine large volumes of data, execute queries with a high degree of complexity, and give answers to critical business questions.
 
-### Data Transformation
+## Data Transformation
 
 1. Bronze Layer
 
@@ -62,7 +53,7 @@ My pipeline fetches the data from APIs, loads it to Google Cloud Storage, then d
 All steps are orchestrated in Airflow.
 
 
-### Pipeline Automation
+## Pipeline Automation
 
 After setting up my pipline, I made a daily trigger to run it and collect new data (if exists)
 
@@ -72,7 +63,7 @@ After setting up my pipline, I made a daily trigger to run it and collect new da
 
 ## Reproducibility
 
-1. Set Up the Environment
+1. Set Up the Environment:
 Install required tools: dbt, Snowflake, and Apache Airflow.
 Configure your machine with the necessary credentials to access Snowflake.
 Prepare Snowflake Database
@@ -88,11 +79,11 @@ Run dbt Models
 4. Start with the raw (bronze) layer, progress to the staging (silver) layer, and finally build the marts (golden) layer.
 Perform testing to ensure data accuracy.
 
-5. Configure Airflow and Cosmos
+5. Configure Airflow and Cosmos:
 Set up the necessary Airflow connections for Snowflake and other dependencies.
 Integrate Cosmos to manage dbt workflows efficiently.
 
-6. Run the ETL Workflow
+6. Run the ETL Workflow:
 Use the Airflow UI to monitor and trigger DAGs.
 Cosmos handles the orchestration, automatically generating Airflow DAGs from dbt workflows.
 
