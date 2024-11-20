@@ -45,22 +45,24 @@ Purpose: Preserve raw data as-is for reference and auditing.
 
 <img src="images/snowflake.png" />
 
+Storage for both raw and transformed data.
 
 ## Data Pipeline 
 
 <img src="images/dag.png" />
 
-My pipeline fetches the data from APIs, loads it to Google Cloud Storage, then doing the unnecessary transformations and load it again to Google BigQuery.
+My pipeline fetches the data from source, apply modeling and transformation then loads it to Snowflake.
 
 All steps are orchestrated in Airflow.
 
 
 ## Pipeline Automation
 
-After setting up my pipline, I made a daily trigger to run it and collect new data (if exists)
+
 
 <img src="images/schedule.png" />
 
+After setting up my pipline, I made a daily trigger to run it and collect new data (if exists)
 
 
 ## Reproducibility
