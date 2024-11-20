@@ -18,8 +18,8 @@ This project demonstrates a robust data pipeline that processes and transforms r
 
 ## Data Ingestion
 
-<img src="project_images/tpc-h-schema.png" />
-<img src="project_images/source.png" />
+<img src="images/tpc-h-schema.png" />
+<img src="images/source.png" />
 
 TPC-H is a decision support benchmark. It consists of a suite of business-oriented ad hoc queries and concurrent data modifications. The queries and the data populating the database have been chosen to have broad industry-wide relevance. This benchmark illustrates decision support systems that examine large volumes of data, execute queries with a high degree of complexity, and give answers to critical business questions.
 
@@ -32,21 +32,21 @@ Purpose: Preserve raw data as-is for reference and auditing.
 
 2. Silver Layer
 
-<img src="project_images/staging.png" />
+<img src="images/staging.png" />
 
 3. Golden Layer
 
-<img src="project_images/marts.png" />
+<img src="images/marts.png" />
 
 
 ### Data Warehouse
 
-<img src="project_images/snowflake.jpg" />
+<img src="images/snowflake.jpg" />
 
 
 ## Data Pipeline 
 
-<img src="project_images/dag.jpg" />
+<img src="images/dag.jpg" />
 
 My pipeline fetches the data from APIs, loads it to Google Cloud Storage, then doing the unnecessary transformations and load it again to Google BigQuery.
 
@@ -57,7 +57,7 @@ All steps are orchestrated in Airflow.
 
 After setting up my pipline, I made a daily trigger to run it and collect new data (if exists)
 
-<img src="project_images/schedule.jpg" />
+<img src="images/schedule.jpg" />
 
 
 

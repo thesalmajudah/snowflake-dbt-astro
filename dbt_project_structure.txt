@@ -1,0 +1,20 @@
+Folder PATH listing
+Volume serial number is EC2E-C3D1
+C:.
++---.astro
++---dags
+¦   +---dbt
+¦       +---data_pipeline
+¦           +---analyses
+¦           +---macros
+¦           +---models
+¦           ¦   +---marts
+¦           ¦   +---staging
+¦           +---seeds
+¦           +---snapshots
+¦           +---tests
+¦               +---tests
++---images
++---logs
++---tests
+    +---dags
